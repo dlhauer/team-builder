@@ -31,7 +31,7 @@ function MemberForm(props) {
         id='name'
         type='text'
         name='name'
-        placeholder='type your name here, doofus'
+        placeholder='member name goes here, doofus'
         onChange={handleChange}
         value={member.name}
       />
@@ -64,14 +64,6 @@ function MemberForm(props) {
         value={member.catchphrase}
       />
       <button type='submit'>Add member</button>
-      {/* <input 
-        id='role'
-        type='dropdown'
-        name='role'
-        // placeholder='type your name here, doofus'
-        onChange={handleChange}
-        value={member.role}
-      /> */}
     </form>
   );
 }

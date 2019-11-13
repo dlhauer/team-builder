@@ -1,5 +1,10 @@
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.6rem;
 }
 
 .App-logo {
@@ -19,4 +24,55 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  align-items: flex-start; 
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 25px;
+}
+
+button {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid dodgerblue;
+  border-radius: 10px;
+  background-color: dodgerblue;
+  color: white;
+}
+
+button:hover {
+  color: dodgerblue;
+  background-color: white;
+}
+
+.member {
+  padding: 20px;
+  background-color: lemonchiffon;
+  border: 5px solid gray;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: left;
+  width: 300px;
+}
+
+.members-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+  margin: 20px 0 50px 0;
 }
