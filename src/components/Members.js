@@ -5,11 +5,10 @@ function Members(props) {
     <div className='members-list'>
       {props.members.map( member => (
         <div key={member.id}className='member'>
-          <h2>Member {member.id}</h2>
-          <p>{member.name}</p>
-          <p>{member.role}</p>
-          <p>{member.email}</p>
-          <p>{member.catchphrase}</p>
+          <h2>Name: {member.name}</h2>
+          <p>Role: {member.role}</p>
+          <p>Email: {member.email}</p>
+          <p>Catchphrase: "{member.catchphrase}"</p>
         </div>
       ))}
 

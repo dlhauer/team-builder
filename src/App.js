@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Member from './components/Members';
+import MemberForm from './components/MemberForm';
+
 
 function App() {
   const [members, setMembers] = useState( [
@@ -19,6 +21,7 @@ function App() {
       id: Date.now(),
       name: member.name,
       role: member.role,
+      email: member.email,
       catchphrase: member.catchphrase,
     };
     setMembers([...members, newMember]);
@@ -26,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <h1>My wonderful team!</h1>
-      {/* <MemberForm addMember={addMember}/> */}
+      <MemberForm addMember={addMember}/>
       <Member members={members}/>
     </div>
   );
